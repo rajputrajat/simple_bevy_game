@@ -3,6 +3,8 @@ name = "simple_bevy_game"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
+bevy = "0.6"
+
+[patch.crates-io]
+bevy = { path = "../../misc/bevy" }
